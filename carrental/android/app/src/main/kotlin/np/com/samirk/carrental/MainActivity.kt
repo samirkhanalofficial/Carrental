@@ -1,4 +1,4 @@
-package com.myallmart.carrental
+package np.com.samirk.carrental
 
 import io.flutter.embedding.android.FlutterActivity
 

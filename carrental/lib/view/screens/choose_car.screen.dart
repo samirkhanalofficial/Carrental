@@ -1,4 +1,5 @@
 import 'package:carrental/configs/cars.config.dart';
+import 'package:carrental/configs/configs.dart';
 import 'package:carrental/configs/routes.config.dart' as routes;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +30,7 @@ class _ChooseCarState extends State<ChooseCar> {
                   child: Column(
                     children: [
                       const Center(
-                        child: Text("A service by Allmart"),
+                        child: Text("Demo Project For Car Rental Service."),
                       ),
                       StatefulBuilder(builder: ((context, setState) {
                         int click = 0;
@@ -60,14 +61,14 @@ class _ChooseCarState extends State<ChooseCar> {
                             onTap: () {
                               try {
                                 launchUrl(
-                                  Uri.parse("fb://profile/102626439288715"),
+                                  Uri.parse(facebookPageId),
                                   mode:
                                       LaunchMode.externalNonBrowserApplication,
                                 );
                               } catch (e) {
                                 launchUrl(
                                   Uri.parse(
-                                      "https://m.facebook.com/allmartcarrent2078"),
+                                      facebook),
                                   mode: LaunchMode.externalApplication,
                                 );
                               }
@@ -82,7 +83,7 @@ class _ChooseCarState extends State<ChooseCar> {
                           GestureDetector(
                             onTap: () {
                               launchUrl(
-                                Uri.parse("https://myallmart.com"),
+                                Uri.parse(website),
                                 mode: LaunchMode.externalApplication,
                               );
                             },
