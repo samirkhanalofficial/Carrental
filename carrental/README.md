@@ -4,6 +4,12 @@ A new Flutter project.
 
 ## Getting Started
 
+## version
+
+flutter: 3.3.2
+jdk: 1.8
+compilesdk:33
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
